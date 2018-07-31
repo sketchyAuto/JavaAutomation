@@ -30,10 +30,10 @@ public class baseListTest {
 
         driver.get(baseUrl);
         //Finding if element is Present
-        boolean results = baseObject.isElemenPresent("name","id");
+        boolean results = baseObject.isElementPresent("name","id");
         System.out.println("Is Element Present: "+ results);
         //Negative
-        boolean results1 = baseObject.isElemenPresent("name-on-present","id");
+        boolean results1 = baseObject.isElementPresent("name-on-present","id");
         System.out.println("Is Element Present: "+ results1);
 
         //Finding by List
