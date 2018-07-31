@@ -42,9 +42,15 @@ public class baseClass {
         } else if (type.equals("xpath")) {
 
             elementList = this.driver.findElements(By.xpath(locator));
-        } else {
+        }
+        else if (type.equals("name")) {
+
+            elementList = this.driver.findElements(By.name(locator));
+        }
+        else {
             System.out.println("Locator type is not supported");
         }
+
         if (elementList.isEmpty()) {
             System.out.println("Element not found with: " + type + ":" + locator);
         } else {
@@ -97,4 +103,11 @@ public class baseClass {
         }
 
     }
+
+    public void enterText(By locator, String text){
+        WebElement element = driver.findElement(locator);
+        element.sendKeys(text);
+
+    }
+
 }
