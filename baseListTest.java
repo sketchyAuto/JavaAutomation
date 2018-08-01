@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import Automate.baseClass;
 
 public class baseListTest {
     WebDriver driver;
