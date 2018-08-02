@@ -48,9 +48,7 @@ public class ScreenShots {
         baseObject.enterText(By.id("flight-departing-hp-flight"),"08/01/2018");
         baseObject.enterText(By.xpath("//input[@id='flight-returning-hp-flight']"),"08/01/2018");
         //baseObject.enterText(By.id("gcw-flights-form-hp-fligh"),"").click();
-        WebElement search = driver.findElement(By.xpath("//form[@id='gcw-flights-form-hp-flight']//button[@type='submit']"));
-        search.click();
-
+        baseObject.getElement("//form[@id='gcw-flights-form-hp-flight']//button[@type='submit']","xpath").click();
         Thread.sleep(3000);
 
     }
