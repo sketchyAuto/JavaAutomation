@@ -1,3 +1,7 @@
+package LearnzAndHomez;
+
+import LearnzAndHomez.LearnMethods;
+
 public class LearnMethodsTest {
     public static void main(String[] args){
         /*Methods don't do anything until you call them into action

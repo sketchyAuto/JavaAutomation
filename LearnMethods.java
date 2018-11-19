@@ -1,3 +1,5 @@
+package LearnzAndHomez;
+
 public class LearnMethods {
 
     //A method is just a chunk of code that does a particular job. The methods return type goes first then method name
